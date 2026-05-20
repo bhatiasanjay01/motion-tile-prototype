@@ -4,10 +4,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
-// Project Pages URL: https://<user>.github.io/motion-tile-prototype/
-const base =
-  process.env.VITE_BASE_PATH ??
-  (process.env.CI === "true" ? "/motion-tile-prototype/" : "/");
+// GitHub project Pages: relative assets (./) resolve under /motion-tile-prototype/
+const base = process.env.VITE_BASE_PATH ?? "/";
 
 export default defineConfig({
   base,

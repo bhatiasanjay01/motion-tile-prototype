@@ -30,7 +30,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE_PATH: /motion-tile-prototype/
+          VITE_BASE_PATH: ./
 
       - name: Add SPA fallback for GitHub Pages
         run: cp dist/index.html dist/404.html

@@ -2,6 +2,9 @@
 
 Static deploy of the polished Cursor canvas for GitHub Pages.
 
+**Repo:** https://github.com/bhatiasanjay01/motion-tile-prototype  
+**Live site (after deploy):** https://bhatiasanjay01.github.io/motion-tile-prototype/
+
 ## Run locally
 
 ```bash
@@ -63,9 +66,11 @@ npm run deploy
 
 ### 4. Enable Pages in GitHub
 
-Repo → **Settings** → **Pages** → Source: branch **`gh-pages`**, folder **`/` (root)**.
+Repo → **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions**.
 
-Site URL: `https://<user>.github.io/<repo>/` (after a few minutes).
+(Or use `npm run deploy` for the classic **`gh-pages`** branch flow — pick one method.)
+
+Site URL: `https://bhatiasanjay01.github.io/motion-tile-prototype/` (after Actions finishes, ~1–2 min).
 
 ## Source
 

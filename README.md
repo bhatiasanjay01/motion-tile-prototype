@@ -66,11 +66,17 @@ npm run deploy
 
 ### 4. Enable Pages in GitHub
 
-Repo → **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions**.
+Repo → **Settings** → **Pages** → **Build and deployment**:
 
-(Or use `npm run deploy` for the classic **`gh-pages`** branch flow — pick one method.)
+- **Source:** Deploy from a branch  
+- **Branch:** `gh-pages`  
+- **Folder:** `/ (root)`
+
+The workflow pushes the built `dist/` folder to the **`gh-pages`** branch on each push to `main`.
 
 Site URL: `https://bhatiasanjay01.github.io/motion-tile-prototype/` (after Actions finishes, ~1–2 min).
+
+**If you previously used “GitHub Actions” as the Pages source** and saw `Failed to create deployment (404)`, switch to the branch settings above — that matches this workflow.
 
 ## Source
 
